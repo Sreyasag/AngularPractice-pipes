@@ -32,8 +32,7 @@
     <div class="col">
       <label><b>Amount</b></label>
       <div >
-        {{ amount | currency:'INR'}}
-      </div>
+        {{ amount | currency:'INR':'symbol' :'1.0-0' }}      </div>
     </div>
   </div>
 </div>
