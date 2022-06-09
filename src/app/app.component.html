@@ -31,8 +31,7 @@
     </div>
     <div class="col">
       <label><b>Amount</b></label>
-      <div >
-        {{ amount | currency:'INR':'symbol' :'1.0-0' }}      </div>
+      <div >INR {{ amount | currency:'INR':'symbol' :'1.0-0' }} / USD {{amount|convert}}      </div>
     </div>
   </div>
 </div>
