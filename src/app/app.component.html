@@ -27,12 +27,12 @@
   <div class="row">
     <div class="form-group col">
       <label for="">Amount</label>
-      <input type="date" class="form-control" (input)="onChangeDate($any($event.target).value)">
+      <input  class="form-control" (input)="onChangeAmount($any($event.target).value)">
     </div>
     <div class="col">
-      <label><b>Date</b></label>
+      <label><b>Amount</b></label>
       <div >
-        {{ date | titlecase}}
+        {{ amount | currency:'INR'}}
       </div>
     </div>
   </div>

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name ="";
   date ="";
-  amount ="";
+  amount : number = 0;
 
   
   onChangeName(event:string){
@@ -20,6 +20,6 @@ export class AppComponent {
   }
 
   onChangeAmount(event:string){
-    this.amount=event;
+    this.amount= parseFloat(event);
   }
 }
