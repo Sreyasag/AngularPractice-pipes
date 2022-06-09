@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '4.PipesPractice';
+  name = "";
+  onChangeName(event:string){
+    this.name= event;
+  }
 }
